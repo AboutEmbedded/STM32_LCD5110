@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"lcd_5110\startup_stm32f103xb.o"
+"lcd_5110\lcd_pcd8544.o"
+"lcd_5110\main.o"
+"lcd_5110\stm32f1xx_it.o"
+"lcd_5110\stm32f1xx_hal_msp.o"
+"lcd_5110\stm32f1xx_hal_gpio_ex.o"
+"lcd_5110\stm32f1xx_hal_tim.o"
+"lcd_5110\stm32f1xx_hal_tim_ex.o"
+"lcd_5110\stm32f1xx_hal.o"
+"lcd_5110\stm32f1xx_hal_rcc.o"
+"lcd_5110\stm32f1xx_hal_rcc_ex.o"
+"lcd_5110\stm32f1xx_hal_gpio.o"
+"lcd_5110\stm32f1xx_hal_dma.o"
+"lcd_5110\stm32f1xx_hal_cortex.o"
+"lcd_5110\stm32f1xx_hal_pwr.o"
+"lcd_5110\stm32f1xx_hal_flash.o"
+"lcd_5110\stm32f1xx_hal_flash_ex.o"
+"lcd_5110\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "LCD_5110\LCD_5110.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LCD_5110.map" -o LCD_5110\LCD_5110.axf
